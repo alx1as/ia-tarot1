@@ -1,0 +1,246 @@
+[
+{
+        "id": 0,
+        "nombre": "El Loco",
+        "arcano": "Mayor",
+        "numero": 0,
+        "simbolismo": "En la cúspide de un acantilado, un joven viajero danza entre el cielo y la tierra, su rostro iluminado por una sonrisa enigmática. Sus ropas multicolores ondean al viento como banderas de libertad, mientras su pequeño perro blanco, símbolo de los instintos más puros, salta juguetonamente a su lado. La ligera mochila que cuelga de su bastón contiene apenas lo esencial, recordándonos que a veces el verdadero tesoro está en lo que dejamos atrás. El sol radiante en el horizonte promete nuevos amaneceres, mientras las montañas distantes susurran historias de aventuras por venir.",
+        "significado_derecho": "El Loco invita a abrazar la aventura con un corazón puro y valiente. Representa el inicio de un viaje espiritual lleno de sorpresas y aprendizajes, una danza con lo desconocido. Es el espíritu libre que confía en el universo y se atreve a dar el primer paso.",
+        "significado_invertido": "El Loco invertido sugiere imprudencia o un salto al vacío sin preparación. Puede ser una advertencia para reflexionar antes de actuar y asegurarse de que la fe no se convierta en locura. Indica decisiones precipitadas y falta de planificación.",
+        "palabras_clave": ["Aventura", "Fe", "Inocencia", "Libertad", "Comienzo", "Espontaneidad"],
+        "imagen": "/images/elLoco.jpg"
+      },
+      {
+        "id": 1,
+        "nombre": "El Mago",
+        "arcano": "Mayor",
+        "numero": 1,
+        "simbolismo": "Bajo el símbolo místico del infinito que flota como una corona etérea, el Mago permanece de pie ante su mesa ritual. Sobre el tapete carmesí, los instrumentos de poder - la espada del aire, el cáliz del agua, el pentáculo de la tierra y la vara del fuego - aguardan su toque transformador. Su túnica blanca representa la pureza de intención, mientras que su capa roja simboliza la acción y la voluntad mundana. Con una mano señala al cielo y con la otra a la tierra, encarnando el principio hermético 'como es arriba, es abajo'. Un jardín de rosas y lirios florece a sus pies, manifestación tangible de su poder para hacer florecer las semillas de la intención.",
+        "significado_derecho": "El Mago representa el poder de la manifestación y la capacidad de canalizar la energía divina hacia el plano terrenal. Es el maestro de los elementos, capaz de transformar la inspiración en realidad tangible a través de la voluntad y la acción consciente.",
+        "significado_invertido": "Cuando El Mago aparece invertido, advierte sobre el mal uso del poder personal, la manipulación o el engaño. Puede indicar talentos desperdiciados o la incapacidad de materializar las ideas por falta de enfoque.",
+        "palabras_clave": ["Manifestación", "Poder", "Habilidad", "Concentración", "Voluntad"],
+        "imagen": "/images/elMago.jpg"
+      },
+      {
+        "id": 2,
+        "nombre": "La Sacerdotisa",
+        "arcano": "Mayor",
+        "numero": 2,
+        "simbolismo": "Entre las columnas ancestrales de Boaz y Jachin, guardianas del templo de Salomón, la Sacerdotisa mantiene su vigilia eterna. Su corona lunar de cuernos plateados refleja la luz de los misterios femeninos, mientras que el pergamino en sus manos, la Torah parcialmente oculta, contiene secretos que solo se revelan a quienes están preparados para verlos. A sus pies, la luna creciente flota sobre aguas cristalinas, reflejo del subconsciente profundo. El velo detrás de ella, bordado con granadas y palmeras, ondula entre los mundos visible e invisible, recordándonos que la verdad más profunda siempre permanece velada hasta que estamos listos para descubrirla.",
+        "significado_derecho": "La Sacerdotisa encarna la sabiduría intuitiva y los misterios ocultos. Representa el conocimiento esotérico, la conexión con el subconsciente y la capacidad de ver más allá del velo de la realidad ordinaria.",
+        "significado_invertido": "Invertida, La Sacerdotisa sugiere desconexión con la intuición, secretos reprimidos o conocimiento mal utilizado. Puede indicar la necesidad de prestar más atención a los mensajes del mundo interior.",
+        "palabras_clave": ["Intuición", "Misterio", "Sabiduría", "Secretos", "Subconsciente"],
+        "imagen": "/images/laSacerdotisa.jpg"
+      },
+      {
+        "id": 3,
+        "nombre": "La Emperatriz",
+        "arcano": "Mayor",
+        "numero": 3,
+        "simbolismo": "En un jardín de abundancia eternal, la Emperatriz reposa sobre cojines de terciopelo verde, color de la vida misma. Su corona de doce estrellas conecta con los ciclos celestiales, mientras su cetro dorado canaliza el poder de Venus, planeta del amor y la creatividad. Su vestido, bordado con granadas maduras, fluye como un río de fertilidad sobre la tierra floreciente. A sus pies, cascadas doradas de trigo maduro danzan con el viento, y la vida brota en cada rincón de su dominio. Un arroyo cristalino serpentea entre la vegetación, llevando el susurro de sus bendiciones a toda la creación. El corazón en su escudo no es solo un símbolo de amor, sino un recordatorio de que toda creación nace del corazón.",
+        "significado_derecho": "La Emperatriz simboliza la fertilidad creativa, la abundancia natural y el poder nurturante del amor incondicional. Representa la manifestación de la belleza, la creatividad y la capacidad de dar vida a nuevos proyectos.",
+        "significado_invertido": "En su aspecto invertido, sugiere creatividad bloqueada, dependencia excesiva o negligencia en el autocuidado. Puede indicar problemas con la expresión emocional o la necesidad de reconectar con la naturaleza.",
+        "palabras_clave": ["Fertilidad", "Abundancia", "Creatividad", "Nutrición", "Naturaleza"],
+        "imagen": "/images/laEmperatriz.jpg"
+      },
+      {
+        "id": 4,
+        "nombre": "El Emperador",
+        "arcano": "Mayor",
+        "numero": 4,
+        "simbolismo": "Sobre un trono de piedra maciza, tallado con cabezas de carnero que evocan a Aries y el poder marcial, el Emperador mantiene su vigilia eterna. Su armadura escarlata brilla bajo un manto del mismo color, simbolizando la protección y el poder que fluye por sus venas. El cetro con forma de ankh en su mano derecha une el poder masculino con el símbolo de la vida eterna, mientras que el orbe dorado en su izquierda representa el mundo que gobierna con sabiduría. Las montañas áridas que se alzan tras él son testigos de su capacidad para prosperar incluso en las condiciones más adversas, y su barba gris habla de la sabiduría ganada a través de la experiencia. Un río pequeño fluye a sus pies, recordándonos que incluso el poder más firme debe ser nutrido por las aguas de la emoción.",
+        "significado_derecho": "El Emperador representa la autoridad, la estructura y el poder del liderazgo sabio. Simboliza la capacidad de establecer orden en el caos y la manifestación del poder paternal protector.",
+        "significado_invertido": "Invertido, señala abuso de poder, rigidez excesiva o dominación autoritaria. Puede indicar la necesidad de encontrar un equilibrio entre el control y la flexibilidad.",
+        "palabras_clave": ["Autoridad", "Estructura", "Protección", "Liderazgo", "Estabilidad"],
+        "imagen": "/images/elEmperador.jpg"
+      },
+      {
+        "id": 5,
+        "nombre": "El Hierofante",
+        "arcano": "Mayor",
+        "numero": 5,
+        "simbolismo": "En el corazón de un templo sagrado, entre columnas que se elevan hacia lo divino, el Hierofante preside desde su trono ornamentado con granadas de sabiduría y hojas de laurel. Su triple corona se eleva como una escalera hacia los reinos celestiales, mientras que su mano derecha forma el antiguo mudra de la enseñanza. La cruz papal que sostiene une los planos vertical y horizontal de la existencia. A sus pies, dos discípulos con tonsuras florales escuchan atentamente, uno vestido con rosas rojas de pasión espiritual, el otro con lirios blancos de pureza doctrinaria. Las llaves cruzadas a sus pies son las claves del conocimiento esotérico y exotérico, recordándonos que toda verdad espiritual tiene múltiples niveles de comprensión.",
+        "significado_derecho": "El Hierofante representa la tradición espiritual, la enseñanza y la conexión con lo sagrado a través de la estructura establecida. Es el puente entre lo divino y lo terrenal.",
+        "significado_invertido": "En posición invertida, sugiere dogmatismo, rebelión contra la tradición o desconexión espiritual. Puede indicar la necesidad de cuestionar las creencias heredadas.",
+        "palabras_clave": ["Tradición", "Enseñanza", "Espiritualidad", "Conformidad", "Guía"],
+        "imagen": "/images/elHierophant.jpg"
+      },
+      {
+        "id": 6,
+        "nombre": "Los Enamorados",
+        "arcano": "Mayor",
+        "numero": 6,
+        "simbolismo": "Bajo el resplandor dorado del sol de la conciencia, un joven se encuentra en la encrucijada del destino. A su derecha, una mujer coronada de flores representa el camino de la virtud y la inspiración espiritual; a su izquierda, otra mujer adornada con uvas simboliza la tentación de los placeres terrenales. El arcángel Rafael extiende sus alas protectoras sobre la escena, bendiciendo la elección consciente del corazón. Detrás de la mujer virtuosa se alza un árbol en llamas, evocando la zarza ardiente de Moisés, mientras que tras la mujer de las uvas, la serpiente se enrosca en el árbol del conocimiento. Las montañas distantes representan los desafíos que cualquier elección traerá consigo.",
+        "significado_derecho": "Los Enamorados simbolizan la elección consciente basada en el amor, la unión de opuestos y la armonía en las relaciones. Representa decisiones importantes guiadas por el corazón.",
+        "significado_invertido": "Invertida, la carta sugiere desunión, decisiones equivocadas o conflictos en las relaciones. Puede indicar la necesidad de reconciliar aspectos internos en conflicto.",
+        "palabras_clave": ["Amor", "Elección", "Unión", "Armonía", "Valores"],
+        "imagen": "/images/losEnamorados.jpg"
+      },
+      {
+        "id": 7,
+        "nombre": "El Carro",
+        "arcano": "Mayor",
+        "numero": 7,
+        "simbolismo": "Un guerrero coronado por estrellas se yergue victorioso en su carro de guerra, un vehículo cúbico que representa la manifestación en el mundo material. Las esfinges que tiran del carro - una negra y otra blanca - simbolizan las fuerzas duales del universo, controladas no por riendas sino por la voluntad pura del auriga. Su armadura está decorada con lunas crecientes y símbolos alquímicos, mientras que las hombreras con rostros lunares sugieren la protección de los ciclos celestiales. El dosel estrellado sobre su cabeza conecta con la influencia cósmica, y el cetro que empuña canaliza la voluntad divina. La ciudad amurallada tras él representa el mundo conquistado, mientras que el río que fluye simboliza el camino emocional recorrido.",
+        "significado_derecho": "El Carro representa el triunfo a través de la determinación y el autocontrol. Simboliza el avance decidido hacia las metas y la victoria sobre los obstáculos mediante la voluntad.",
+        "significado_invertido": "En su aspecto invertido, indica falta de dirección, pérdida de control o victoria pírrica. Puede sugerir la necesidad de revaluar la dirección del viaje.",
+        "palabras_clave": ["Victoria", "Control", "Determinación", "Avance", "Conquista"],
+        "imagen": "/images/elCarro.jpg"
+      },
+      {
+        "id": 8,
+        "nombre": "La Fuerza",
+        "arcano": "Mayor",
+        "numero": 8,
+        "simbolismo": "En un campo de lirios blancos, una doncella de serena presencia acaricia la melena de un león feroz, cerrando sus fauces no con fuerza física sino con una gentil pero inquebrantable determinación. Sobre su cabeza flota el símbolo del infinito, recordándonos la naturaleza eterna del poder espiritual sobre la fuerza bruta. Su vestido blanco, adornado con guirnaldas de rosas, simboliza la pureza de intención que doma las pasiones más salvajes. El león, con su melena solar y su noble postura, representa no solo nuestros instintos primarios sino también nuestra realeza interior. Las montañas distantes son testigos silenciosos de esta danza entre la gracia y el poder, mientras que el cielo dorado sugiere la presencia divina que bendice esta unión de opuestos.",
+        "significado_derecho": "La Fuerza representa el poder del amor y la gentileza sobre la naturaleza salvaje. Simboliza la maestría sobre los instintos y la capacidad de transformar la energía bruta en poder constructivo.",
+        "significado_invertido": "Invertida, sugiere debilidad interior, falta de confianza o uso inadecuado del poder. Puede indicar la necesidad de encontrar el equilibrio entre la fuerza y la suavidad.",
+        "palabras_clave": ["Coraje", "Paciencia", "Control", "Compasión", "Poder interno"],
+        "imagen": "/images/laFuerza.jpg"
+      },
+      {
+      
+            "id": 9,
+            "nombre": "El Ermitaño",
+            "arcano": "Mayor",
+            "numero": 9,
+            "simbolismo": "En las alturas nevadas de una montaña sagrada, una figura solitaria avanza contra el viento del anochecer. Su mano derecha sostiene una lámpara antigua donde brilla la estrella de seis puntas, símbolo de la sabiduría divina perfectamente equilibrada. El bastón en su mano izquierda, pulido por años de uso, habla de un camino largo y solitario. Su manto gris, del color del crepúsculo, se funde con las nieblas de la montaña, recordándonos que la verdadera sabiduría a menudo se encuentra en los lugares más discretos. La nieve bajo sus pies representa la pureza del camino espiritual, mientras que la luz de su lámpara, aunque pequeña, es suficiente para iluminar el siguiente paso en el sendero, enseñándonos que en el camino espiritual, solo necesitamos ver lo suficiente para dar el siguiente paso.",
+            "significado_derecho": "El Ermitaño representa la búsqueda interior de la verdad y la sabiduría. Simboliza el retiro consciente del mundo exterior para encontrar la luz interior y la guía espiritual.",
+            "significado_invertido": "En posición invertida, indica aislamiento excesivo, soledad no deseada o rechazo a la guía interior. Puede sugerir la necesidad de buscar consejo o romper el aislamiento.",
+            "palabras_clave": ["Introspección", "Soledad", "Guía", "Sabiduría", "Búsqueda"],
+            "imagen": "/images/elErmitaño.jpg"
+          },
+          {
+            "id": 10,
+            "nombre": "La Rueda de la Fortuna",
+            "arcano": "Mayor",
+            "numero": 10,
+            "simbolismo": "Una rueda colosal gira eternamente entre el cielo y la tierra, adornada con letras hebreas y símbolos alquímicos que deletrean el nombre divino. En sus bordes, cuatro criaturas místicas ocupan las esquinas del mundo: el águila del aire, el ángel del fuego, el toro de la tierra y el león del agua, cada uno sosteniendo las escrituras sagradas de su elemento. En la rueda misma, tres figuras danzan con su giro: la esfinge dorada en la cima representa la sabiduría que trasciende los ciclos, mientras que el mono descendente y la serpiente ascendente simbolizan las fuerzas de evolución e involución. El fondo azul celeste está salpicado de estrellas doradas, recordándonos que incluso el cambio más profundo sigue un patrón cósmico.",
+            "significado_derecho": "La Rueda de la Fortuna representa los ciclos de la vida y el destino en constante movimiento. Simboliza cambios inevitables, oportunidades y la danza cósmica del karma.",
+            "significado_invertido": "Invertida, sugiere resistencia al cambio, mala suerte o estancamiento en ciclos negativos. Puede indicar la necesidad de adaptarse a las transformaciones de la vida.",
+            "palabras_clave": ["Cambio", "Destino", "Ciclos", "Oportunidad", "Karma"],
+            "imagen": "/images/laRuedaDeLaFortuna.jpg"
+          },
+          {
+            "id": 11,
+            "nombre": "La Justicia",
+            "arcano": "Mayor",
+            "numero": 11,
+            "simbolismo": "Entre dos pilares de perfecta simetría, una figura regia se sienta en un trono de piedra, su postura tan recta como la espada que sostiene en su mano derecha. La balanza en su mano izquierda oscila suavemente, buscando el equilibrio perfecto entre misericordia y severidad. Su corona dorada, adornada con un pequeño cuadrado que representa la tierra manifestada, brilla con la luz de la verdad imparcial. Su manto rojo habla de acción y consecuencia, mientras que sus sandalias, apenas visibles bajo el borde de su túnica, tocan una baldosa blanca y otra negra, simbolizando su comprensión de todas las dualidades. El velo gris tras el trono sugiere que la verdadera justicia trasciende las apariencias superficiales, penetrando hasta el corazón de cada asunto.",
+            "significado_derecho": "La Justicia representa el equilibrio kármico y la verdad objetiva. Simboliza decisiones justas, responsabilidad por las acciones y la restauración del equilibrio.",
+            "significado_invertido": "En su aspecto invertido, indica injusticia, desequilibrio o negación de la responsabilidad. Puede sugerir la necesidad de enfrentar las consecuencias de las acciones.",
+            "palabras_clave": ["Equilibrio", "Verdad", "Karma", "Consecuencia", "Equidad"],
+            "imagen": "/images/laJusticia.jpg"
+          },
+          {
+            "id": 12,
+            "nombre": "El Colgado",
+            "arcano": "Mayor",
+            "numero": 12,
+            "simbolismo": "Suspendido por un pie de una viga de madera viva, el iniciado flota entre el cielo y la tierra. Su pierna doblada forma un cuatro invertido sobre la recta, creando el glifo alquímico de la consumación espiritual. Sus manos, atadas tras la espalda, forman un triángulo invertido por donde la luz divina puede fluir hacia el mundo material. Su rostro resplandece con una serenidad paradójica, iluminado por un halo dorado que sugiere la iluminación alcanzada a través de la rendición voluntaria. El fondo de montañas azules y el árbol floreciente del que cuelga nos recuerdan que el sacrificio consciente siempre conduce a un renacimiento. Sus ropajes, rojos y azules, representan la actividad divina fluyendo a través de la receptividad humana.",
+            "significado_derecho": "El Colgado representa la rendición voluntaria y el sacrificio que lleva a la iluminación. Simboliza una nueva perspectiva ganada a través de la pausa y la suspensión.",
+            "significado_invertido": "Invertido, sugiere resistencia inútil, sacrificio en vano o apego a viejas formas de ver el mundo. Puede indicar la necesidad de soltar el control.",
+            "palabras_clave": ["Sacrificio", "Perspectiva", "Rendición", "Pausa", "Inversión"],
+            "imagen": "/images/elColgado.jpg"
+          },
+          {
+            "id": 13,
+            "nombre": "La Muerte",
+            "arcano": "Mayor",
+            "numero": 13,
+            "simbolismo": "Sobre un caballo blanco de pureza trascendental, el esqueleto coronado cabalga inexorablemente. Su armadura negra no es de guerra sino de transformación profunda, y el estandarte negro que porta muestra una rosa blanca de cinco pétalos, símbolo de la vida eterna que florece incluso en la disolución. A su paso caen todos los rangos de la humanidad: el rey, el obispo, el mercader y el niño, recordándonos que la transformación no distingue entre jerarquías terrenales. En el horizonte, el sol se pone entre dos torres distantes, pero sus últimos rayos prometen un nuevo amanecer. El río que fluye hacia el horizonte sugiere que la muerte no es un final sino un pasaje, mientras que los brotes verdes que emergen del suelo proclaman que toda muerte contiene las semillas de un nuevo nacimiento.",
+            "significado_derecho": "La Muerte representa la transformación profunda y el fin necesario de un ciclo. Simboliza la muerte metafórica de lo viejo para dar paso a lo nuevo.",
+            "significado_invertido": "En posición invertida, indica resistencia al cambio, estancamiento o transformación incompleta. Puede sugerir la necesidad de aceptar los finales inevitables.",
+            "palabras_clave": ["Transformación", "Fin", "Renovación", "Cambio", "Liberación"],
+            "imagen": "/images/laMuerte.jpg"
+          },
+          {
+            "id": 14,
+            "nombre": "La Templanza",
+            "arcano": "Mayor",
+            "numero": 14,
+            "simbolismo": "Un ángel andrógino, con alas iridiscentes que capturan todos los colores del arcoíris, permanece con un pie en la tierra y otro en el agua, simbolizando el equilibrio entre lo material y lo emocional. Sus vestiduras blancas fluyen como agua pura, mientras que el triángulo inscrito en un cuadrado sobre su pecho representa la perfección espiritual manifestada en la forma física. Con gracia infinita, vierte un líquido dorado entre dos copas, una de plata y otra de oro, en un acto eterno de transmutación alquímica. A sus espaldas, un sendero serpentea entre lirios florecientes hacia montañas coronadas por una corona dorada, sugiriendo el camino de la maestría espiritual. El sol naciente en el horizonte promete la iluminación que viene a través del equilibrio perfecto de todos los elementos.",
+            "significado_derecho": "La Templanza representa el arte divino de la moderación y el equilibrio. Simboliza la integración armoniosa de opuestos y la capacidad de fluir con gracia entre los extremos.",
+            "significado_invertido": "En posición invertida, sugiere desequilibrio, excesos o falta de moderación. Puede indicar la necesidad de encontrar un mejor balance en la vida.",
+            "palabras_clave": ["Equilibrio", "Moderación", "Armonía", "Fluidez", "Integración"],
+            "imagen":"/images/laTemplanza.jpg"
+          },
+          {
+            "id": 15,
+            "nombre": "El Diablo",
+            "arcano": "Mayor",
+            "numero": 15,
+            "simbolismo": "Sobre un pedestal negro que es a la vez altar y prisión, el Baphomet se yergue con alas de murciélago y pezuñas de macho cabrío. Su rostro caprichoso combina rasgos humanos y animales, mientras que la estrella invertida en su frente irradia una luz hipnótica. En su mano derecha levanta una antorcha negra que ilumina pero también oscurece, mientras que su mano izquierda forma el signo de la dispersión. A sus pies, dos figuras humanas, un hombre y una mujer, permanecen encadenadas pero con lazos lo suficientemente sueltos como para liberarse si reconocieran su cautiverio. Sus cuernos se ramifican como un árbol invertido, sugiriendo el crecimiento hacia lo material en lugar de lo espiritual. La uva que crece en el pedestal simboliza la embriaguez de los placeres materiales que nos mantienen cautivos.",
+            "significado_derecho": "El Diablo representa las ataduras autoimpuestas y la obsesión con lo material. Simboliza las sombras internas que nos mantienen cautivos a través de nuestros propios miedos y deseos.",
+            "significado_invertido": "En posición invertida, sugiere liberación de las ataduras, reconocimiento de las propias sombras o ruptura de patrones destructivos. Puede indicar el momento de enfrentar y superar las adicciones.",
+            "palabras_clave": ["Atadura", "Materialismo", "Sombra", "Tentación", "Dependencia"],
+            "imagen": "/images/elDiablo.jpg"
+          },
+          {
+            "id": 16,
+            "nombre": "La Torre",
+            "arcano": "Mayor",
+            "numero": 16,
+            "simbolismo": "Contra un cielo negro como el ónix, un rayo de fuego divino golpea la corona dorada de una torre de piedra gris, símbolo de todas las estructuras que construimos con orgullo y falsa seguridad. Las llamas que brotan de sus ventanas son tanto destructivas como purificadoras. Dos figuras caen: una coronada y otra no, recordándonos que la iluminación súbita no distingue entre rangos sociales. La torre misma está construida sobre una montaña rocosa, sugiriendo que incluso nuestras fundaciones más sólidas pueden tambalearse cuando la verdad golpea. Los veintidós yods de fuego que caen alrededor representan las letras del alfabeto hebreo, símbolos de la destrucción necesaria del lenguaje humano ante la verdad divina directa.",
+            "significado_derecho": "La Torre representa la destrucción súbita de estructuras falsas y la liberación a través del caos. Simboliza revelaciones repentinas que sacuden los cimientos de nuestras creencias.",
+            "significado_invertido": "En posición invertida, sugiere resistencia al cambio necesario, crisis evitada pero no resuelta, o trauma no procesado. Puede indicar la necesidad de permitir que ciertas estructuras caigan.",
+            "palabras_clave": ["Ruptura", "Revelación", "Caos", "Liberación", "Despertar"],
+            "imagen": "/images/laTorre.jpg"
+          },
+          {
+            "id": 17,
+            "nombre": "La Estrella",
+            "arcano": "Mayor",
+            "numero": 17,
+            "simbolismo": "Bajo un cielo nocturno donde brillan ocho estrellas mayores y ocho menores, una doncella desnuda se arrodilla junto a un estanque cristalino. Su pie izquierdo descansa sobre el agua mientras el derecho permanece en la tierra, simbolizando el equilibrio entre intuición y materialidad. Con infinita gracia, vierte agua de dos jarrones: uno en el estanque, nutriendo las aguas del subconsciente, y otro sobre la tierra, donde cinco corrientes se dispersan como los sentidos purificados. El árbol al fondo alberga un ibis sagrado, mensajero de la sabiduría más profunda. La gran estrella de ocho puntas que domina el cielo representa la perfección cósmica, mientras que las flores rojas que brotan a su alrededor son promesas de pasión renacida después de la tormenta.",
+            "significado_derecho": "La Estrella representa la esperanza renovada y la conexión con la guía divina. Simboliza la inspiración celestial y la promesa de sanación después de la crisis.",
+            "significado_invertido": "En posición invertida, sugiere pérdida de fe, desconexión espiritual o desesperanza. Puede indicar la necesidad de reconectar con la esperanza y la inspiración.",
+            "palabras_clave": ["Esperanza", "Inspiración", "Serenidad", "Renovación", "Guía"],
+            "imagen": "/images/laEstrella.jpg"
+          },{
+            
+                "id": 18,
+                "nombre": "La Luna",
+                "arcano": "Mayor",
+                "numero": 18,
+                "simbolismo": "En la hora más oscura de la noche, la luna llena brilla con un resplandor inquietante, dejando caer quince yods de luz plateada como gotas de rocío psíquico. Entre dos torres distantes que marcan los límites de lo conocido, un sendero serpenteante atraviesa paisajes oníricos. Un perro y un lobo, representantes de lo domesticado y lo salvaje, aúllan a la luna, mientras que del estanque de las profundidades psíquicas emerge un cangrejo, portador de los sueños ancestrales. Las gotas que caen de la luna son de tres colores - rojo, azul y amarillo - simbolizando cómo la luz lunar transmuta la realidad ordinaria en algo más misterioso y profundo. El camino que serpentea hacia las montañas lejanas está sembrado de piedras cristalinas que brillan bajo la luz lunar, marcando un sendero iniciático a través del subconsciente.",
+                "significado_derecho": "La Luna representa el viaje a través del subconsciente y las aguas profundas de la psique. Simboliza los sueños, las intuiciones y los misterios que emergen en la noche del alma.",
+                "significado_invertido": "En posición invertida, sugiere confusión mental, engaños o miedos irracionales. Puede indicar la necesidad de distinguir entre la intuición verdadera y las ilusiones.",
+                "palabras_clave": ["Intuición", "Misterio", "Sueños", "Ilusión", "Subconsciente"],
+                "imagen": "/images/laLuna.jpg"
+              },
+              {
+                "id": 19,
+                "nombre": "El Sol",
+                "arcano": "Mayor",
+                "numero": 19,
+                "simbolismo": "Bajo un sol radiante cuyo rostro expresa la sabiduría cósmica, dos niños danzan en un jardín paradisíaco, sus gestos de alegría pura reflejando la inocencia recuperada. El sol emite veintiún rayos rectos y ondulantes, alternando luz y calor divino, mientras que las cuatro girasoles que crecen tras el muro bajo representan las cuatro dimensiones del ser alineadas con la verdad solar. El muro mismo, construido con bloques rojos, simboliza el límite ya superado entre la consciencia ordinaria y la iluminación. Los niños, perfectamente desnudos y libres de vergüenza, portan guirnaldas que representan la victoria del espíritu sobre la materia. El suelo dorado bajo sus pies danzantes sugiere que caminan sobre luz solidificada.",
+                "significado_derecho": "El Sol representa la iluminación consciente y la alegría pura del ser. Simboliza la verdad revelada, el éxito y la vitalidad radiante que viene con la autorrealización.",
+                "significado_invertido": "En posición invertida, sugiere claridad temporalmente oscurecida, vitalidad disminuida o exceso de optimismo. Puede indicar la necesidad de encontrar el equilibrio en la expresión de la alegría.",
+                "palabras_clave": ["Iluminación", "Alegría", "Éxito", "Claridad", "Vitalidad"],
+                "imagen":"/images/elSol.jpg"
+              },
+              {
+                "id": 20,
+                "nombre": "El Juicio",
+                "arcano": "Mayor",
+                "numero": 20,
+                "simbolismo": "Entre nubes que se abren como cortinas cósmicas, el ángel Gabriel hace sonar su trompeta dorada, cuyo estandarte muestra la cruz de la manifestación completa. Abajo, en las tumbas grises que representan las limitaciones de la consciencia mortal, los cuerpos resucitan: un hombre, una mujer y un niño emergen con los brazos elevados en éxtasis ante el llamado divino. Las aguas azules que rodean las tumbas simbolizan el renacimiento emocional, mientras que las montañas nevadas en el fondo representan las alturas de la realización espiritual. El sonido de la trompeta vibra en siete ondas, despertando los siete chakras del ser humano a una nueva realidad. Los cuerpos resucitados brillan con un tinte dorado, sugiriendo su transformación de materia mortal a luz consciente.",
+                "significado_derecho": "El Juicio representa el despertar a una nueva consciencia y el llamado a la transformación final. Simboliza la resurrección del verdadero ser y la liberación del pasado.",
+                "significado_invertido": "En posición invertida, sugiere resistencia al llamado interior, dudas sobre el propósito vital o miedo al cambio profundo. Puede indicar la necesidad de escuchar el llamado a la transformación.",
+                "palabras_clave": ["Despertar", "Renacimiento", "Llamado", "Transformación", "Liberación"],
+                "imagen": "/images/elJuicio.jpg"
+              },
+              {
+                "id": 21,
+                "nombre": "El Mundo",
+                "arcano": "Mayor",
+                "numero": 21,
+                "simbolismo": "En el centro de una corona de laurel verde esmeralda, una figura andrógina danza con velos púrpuras que flotan como las últimas ilusiones disolviéndose. En las cuatro esquinas, los guardianes del universo mantienen su vigilia eterna: el toro de la tierra, el león del fuego, el águila del agua y el ángel del aire. La figura central sostiene dos varas que reflejan la polaridad resuelta, mientras que su pose de danza forma la letra hebrea tav, el sello final de la creación. La guirnalda está atada con cintas rojas en forma de lemniscata, sugiriendo que incluso en la culminación, los ciclos continúan eternamente. Las nubes que rodean la escena son del color del amanecer, recordándonos que cada final es también un nuevo comienzo.",
+                "significado_derecho": "El Mundo representa la culminación del viaje espiritual y la integración completa de todos los aspectos del ser. Simboliza el logro, la realización y la danza de la vida en su expresión más elevada.",
+                "significado_invertido": "En posición invertida, sugiere conclusiones incompletas, falta de cierre o resistencia a completar ciclos. Puede indicar la necesidad de integrar todas las lecciones antes de moverse hacia adelante.",
+                "palabras_clave": ["Completitud", "Integración", "Logro", "Realización", "Plenitud"],
+                "imagen": "/images/elMundo.jpg"
+              }
+            ]
+        
