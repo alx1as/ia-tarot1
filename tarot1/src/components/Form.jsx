@@ -78,12 +78,17 @@ export default function Form() {
           </ul>
         )}
   
-        {respuesta && (
-          <div className="interpretation-container">
-            <h3 className="interpretation-title">Interpretación:</h3>
-            <p className="interpretation-text">{respuesta.interpretacion}</p>
-          </div>
-        )}
+  {respuesta && (
+  <div className="interpretation-container">
+    <h3 className="interpretation-title">Interpretación:</h3>
+    {respuesta.interpretacion.split("**").map((texto, index) => (
+      <p key={index} className="interpretation-text">
+        {texto.trim()}
+      </p>
+    ))}
+  </div>
+)}
+
       </div>
     </div>
   );
