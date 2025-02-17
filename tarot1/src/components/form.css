@@ -91,17 +91,17 @@
   max-width: 800px; /* Limita el ancho para facilitar la lectura */
   margin: 1rem auto; /* Centra el contenedor */
   padding: 1rem; /* Espaciado interno */
-  background-color: #5b575700; /* Fondo suave */
+ 
   border: 1px solid #ddd; /* Borde ligero */
   border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  box-shadow: 0 4px 6px rgba(220, 202, 202, 0.887); /* Sombra sutil */
 }
 
 /* Estilo para el título */
 .interpretation-title {
   font-size: 1.4rem; /* Tamaño del título */
   font-weight: bold; /* Negrita */
-  color: #444; /* Color del texto */
+  color: #f0dfdf; /* Color del texto */
   margin-bottom: 0.5rem; /* Espacio debajo del título */
   text-align: center; /* Centrar el título */
   text-transform: uppercase; /* Mayúsculas para destacar */
@@ -109,7 +109,7 @@
 
 /* Estilo para el texto */
 .interpretation-text {
-  font-size: 1.5rem; /* Tamaño cómodo */
+  font-size: 1.2rem; /* Tamaño cómodo */
   line-height: 1.6; /* Altura de línea para facilitar lectura */
   color: #ffeded; /* Color del texto */
   text-align:left;
