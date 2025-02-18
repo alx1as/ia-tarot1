@@ -1,0 +1,10 @@
+{
+    "ignoreCommand": "echo 'Ignoring backend folder' && rm -rf backend",
+    "rewrites": [
+      {
+        "source": "/api/(.*)",
+        "destination": "https://backend-tarotia.vercel.app/api/$1"
+      }
+    ]
+  }
+  
