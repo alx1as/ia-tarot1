@@ -23,7 +23,7 @@ export default function Form() {
     };
   
     try {
-      const response = await fetch('http://localhost:3000/api/interpretar', {
+      const response = await fetch('tarot1-gl8p7s3o8-alx1as-projects.vercel.app/api/interpretar', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(datos),
