@@ -98,8 +98,5 @@ Entonces, ¿qué tenemos aquí? Pilar está en medio de un proceso de limpieza e
     res.status(500).json({ error: "Hubo un problema al procesar la interpretación." });
   }
 });
-
-// Iniciar servidor
-app.listen(3000, () => {
-  console.log("Servidor ejecutándose en http://localhost:3000");
-});
+//en vercel no hace falta app.listen porque las funciones serverless manejan las solicitudes automáticamente
+export default app; //Vercel requiere que exporte la función
