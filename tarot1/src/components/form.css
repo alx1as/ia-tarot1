@@ -1,116 +1,158 @@
-/* Formulario */
+/* Estilos generales */
+body {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Contenedor principal */
 .form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 800px;
   text-align: center;
-  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+/* Input de pregunta */
 .input-question {
-  width: 80%;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 500px;
   padding: 10px;
   font-size: 1rem;
-  border: 2px solid #e7d9c4;
   border-radius: 5px;
-  background-color: transparent;
-  color: #e7d9c4;
-  margin-bottom: 2rem;
-  transition: box-shadow 0.3s ease, border-color 0.3s ease;
-}
-
-.input-question::placeholder {
-  color: #c4b6a8;
-}
-
-.input-question:focus {
-  outline: none;
-  border-color: #a982b9;
-  box-shadow: 0 0 4px #cfbee1;
-}
-
-.btn-throw {
-  margin-left: 1rem;
-  padding: 10px;
-  font-size: 1rem;
   border: none;
-  border-radius: 5px;
-  background-color: #643a6b;
-  color: #e7d9c4;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.btn-throw:hover {
-  background-color: #8a508a;
-  transform: scale(1.05);
-}
-
-.btn-throw:active {
-  transform: scale(0.95);
-}
-
-/* Resultado */
-.result-container {
   text-align: center;
 }
 
-/* Lista de cartas */
+/* Botón de tirar cartas */
+.btn-throw {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #a383d6;
+  color: white;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn-throw:hover {
+  background-color: #8c6bb8;
+}
+
+/* Contenedor de cartas */
+.result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 .card-list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  list-style: none;
-  padding: 0;
+  flex-wrap: nowrap;
+  gap: 15px;
+  margin-top: 20px;
+  width: 100%;
 }
 
 .card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
   border-radius: 10px;
- margin-bottom:  2rem;
-  max-width: 200px;
+  width: 150px;
   text-align: center;
-  position: relative;
-  transform: translateY(20px);
-}
-
-.card-image {
-  width: 100%;
-  object-fit: contain;
-  height: 300px;
-  margin-bottom: 10px;
 }
 
 .card-image.inverted {
   transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
 }
 
-.card-title {
-  font-size: 1.2rem;
-  color: #fff8e1;
+.card-image {
+  width: 120px;
+  height: 200px;
+  object-fit: contain;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
 }
 
-/* Interpretación */
+.card-image:hover,
+.card-image:active {
+  transform: scale(1.5);
+}
+
+/* Animación de entrada de cartas */
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-item {
+  animation: cardFadeIn 0.5s ease-in-out;
+}
+
+/* Contenedor de interpretación */
 .interpretation-container {
-  max-width: 800px; /* Limita el ancho para facilitar la lectura */
-  margin: 1rem auto; /* Centra el contenedor */
-  padding: 1rem; /* Espaciado interno */
- 
-  border: 1px solid #ddd; /* Borde ligero */
-  border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 0 4px 6px rgba(220, 202, 202, 0.887); /* Sombra sutil */
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 700px;
 }
 
-/* Estilo para el título */
 .interpretation-title {
-  font-size: 1.4rem; /* Tamaño del título */
-  font-weight: bold; /* Negrita */
-  color: #f0dfdf; /* Color del texto */
-  margin-bottom: 0.5rem; /* Espacio debajo del título */
-  text-align: center; /* Centrar el título */
-  text-transform: uppercase; /* Mayúsculas para destacar */
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-/* Estilo para el texto */
 .interpretation-text {
-  font-size: 1.2rem; /* Tamaño cómodo */
-  line-height: 1.6; /* Altura de línea para facilitar lectura */
-  color: #ffeded; /* Color del texto */
-  text-align:left;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .card-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .card-item {
+    width: 100px;
+  }
+  
+  .card-image {
+    width: 80px;
+    height: 140px;
+  }
+  
+  .input-question,
+  .btn-throw,
+  .interpretation-container {
+    width: 90%;
+  }
 }

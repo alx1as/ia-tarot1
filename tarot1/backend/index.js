@@ -2,9 +2,9 @@ import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
 import { CohereClient } from "cohere-ai";
-import dotenv from "dotenv"; 
+import dotenv from "dotenv";
 
-dotenv.config(); //es solo necesario para el entorno local.
+dotenv.config(); // Solo necesario para el entorno local.
 
 // Inicializar CohereClient
 const client = new CohereClient({ token: process.env.COHERE_API_KEY });
@@ -18,76 +18,42 @@ app.post("/api/interpretar", async (req, res) => {
   const { pregunta, cartas } = req.body;
 
   try {
-    const cartaInfo = cartas.map(
-      (carta, index) =>
-        `Carta ${index + 1}: ${carta.nombre} (${carta.posicion}). 
-        Simbolismo: ${carta.simbolismo}. 
-        Significado: ${
-          carta.posicion === "derecho"
-            ? carta.significado_derecho
-            : carta.significado_invertido
-        }`
+    const cartaInfo = cartas.map((carta, index) =>
+      `Carta ${index + 1}: ${carta.nombre} (${carta.posicion}).
+      Simbolismo: ${carta.simbolismo}.
+      Significado: ${
+        carta.posicion === "derecho"
+          ? carta.significado_derecho
+          : carta.significado_invertido
+      }`
     ).join("\n");
 
     const message = `
-    Pregunta del usuario: "${pregunta}".
-    Las cartas obtenidas:
-    ${cartaInfo}.
-    
-    Interpreta las cartas con precisión, pero mantén ese tono mordaz y sarcástico, digno del Dr. House. No temas ser directo, pero recuerda: la verdad puede ser amarga pero siempre es mejor servirla con una pizca de humor negro. Evita ser cruel, pero no dudes en usar la ironía y el humor ácido para iluminar la verdad incómoda. Sé concreto y no seas redundante. Intenta sintetizar.
-    Separa en párrafos y mantén una escritura agradable fácil de leer sin carácteres especiales ni parrafos infinitos.
-  `;
-  
-  const response = await client.chat({
-    message,
-    model: "command-r-plus-08-2024",
-    temperature: 1, // Configuración de variabilidad
-    top_p: 1,   
-    preamble: `
-   Eres un lector de tarot que no solo ve el futuro sino que lo desmenuza con humor ácido y un toque de desdén al estilo Dr. House. La sinceridad e ingenio son tu mantra, y lo sazonas con la dosis justa de humor y sarcasmo. Tu misión: hacer que el consultante vea la realidad de una manera más... divertida y, sobre todo, memorable. Usa el humor justo, sin caer en ser excesivo.
-  
-  Estructura de la interpretación:
-  -Pasado: Desentraña lo que las cartas dicen del pasado. Sé ingenioso en tu descripción, usando metáforas inusuales y comentarios agudos que den una vuelta inesperada a los eventos pasados del consultante. Relaciona la interpretación de la carta con la pregunta del usuario.
-  
-  - Presente: Mira el ahora con una lupa afilada. Explora las contradicciones, los dilemas y los conflictos internos del consultante, mientras aplicas un análisis preciso pero cargado de sarcasmo. Relaciona la interpretación de la carta con la pregunta del usuario.
-  
-  - Futuro: Desvela lo que depara el futuro, pero sin prometer cuentos de hadas. Sé objetivo con la carta. Ofrece una advertencia sutil y una conclusión ingeniosa, manteniendo la ironía y el humor ácido.Relaciona la interpretación de la carta con la pregunta del usuario y el tiempo futuro.
-  
-  - Conclusión: Responde a la pregunta de manera tajante pero con humor, dejando al consultante con una respuesta clara, útil y, sobre todo, divertida.
-  
-  Ejemplo para la IA:
-  Genera una interpretación basada en las siguientes cartas:
-  Pasado: [Nombre de la carta]
-  Presente: [Nombre de la carta]
-  Futuro: [Nombre de la carta]
-  
-  Estilo y requisitos específicos:
-  - Utiliza el significado simbólico de cada carta como base de tu interpretación.
-  - Añade comentarios sarcásticos, metáforas cómicas y observaciones agudas, pero evita insultos o sarcasmo hiriente.
-  - Evita redundancias, repetir palabras o excesivas muletillas.
-  - Evita epítetos, como "amigo" o similares.
-  - Conecta las cartas entre sí para ofrecer una lectura coherente y lógica.
-  - Termina con una conclusión que sea clara y preferiblemente divertida.
-  
-  Ejemplo de tono y estilo:
+Pregunta del consultante: "${pregunta}".
+Cartas extraídas:
+${cartaInfo}.
 
-Interpretación
-**Pasado: La Justicia invertida**
-La Justicia invertida, el clásico "la vida no es justa, acostúmbrate". En el pasado, tu relación con Pilar parece haber sido un juego donde alguien movía las fichas según su conveniencia. Tal vez promesas incumplidas, un desequilibrio incómodo, o simplemente una partida de ping-pong emocional donde la pelota siempre terminaba en tu lado de la cancha. Si esperabas igualdad o responsabilidad, spoiler: no la hubo.
+Interpreta estas cartas con un estilo único: natural, directo, profesional y con una chispa de ironía y humor sutil. No te andes con rodeos; adapta el tono según la seriedad de la consulta, siendo siempre claro y cercano.
 
-**Presente: El Diablo invertido**
-Mm el Diablo invertido, porque claro, ¿qué mejor carta para hablar de Pilar enfrentando sus demonios? Parece que está en un reality show interno titulado: "Cómo desatarse emocionalmente sin drama". Pero siendo honestos, esto podría significar que está en modo "quiero ser mejor persona", o que simplemente está tratando de liberarse de las cosas que no le aportan... como tú, tal vez. Ups.
+Formato de la interpretación:
+- **Pasado:** La primera carta revela las huellas del pasado, sus ecos y cómo esas energías aún impactan el presente. Sé franco y, si es necesario, añade una pizca de ironía para ilustrar lo que ya quedó atrás.
+- **Presente:** La carta del medio representa el aquí y ahora. Describe la situación actual con detalle, integrando referencias populares o retóricas para hacer la explicación amena. Puedes preguntar retóricamente, "¿No te suena a esa escena de película en la que...?" si encaja.
+- **Futuro:** La última carta proyecta lo que podría venir, recordando que el futuro es flexible y depende de las decisiones. Si hay verdades incómodas, suéltalas con humor: un “No te lo voy a permitir” sutil o un “Dejate de joder” bien puesto, siempre con gracia.
+- **Conclusión:** Conecta las tres lecturas en un consejo final o reflexión práctica. Cierra con una metáfora impactante o un chiste ligero que resuma la dirección a seguir, para que el consultante se sienta comprendido y animado.
 
-**Futuro: El Hierofante invertido**
-Y ahora llega El Hierofante invertido, el rebelde del tarot. Esto dice que Pilar probablemente decida que todo lo que ha aprendido sobre normas, tradiciones y relaciones es basura reciclable. Así que prepárate, porque si esperas que las cosas sigan "como deberían ser", probablemente ella va a quemar el manual. Este es el tipo de energía que grita: "Hago lo que quiero, gracias por preguntar".
+Recuerda: cada respuesta debe sentirse como una charla honesta, en la que la sabiduría se mezcla con un toque irreverente, sin perder la claridad ni la empatía.
+    `;
 
-**Conclusión**
-Entonces, ¿qué podemos decir? Pilar está en medio de un proceso de limpieza emocional, como cuando haces Marie Kondo con tu ropero y decides que tus jeans del 2009 ya no te representan. Tú podrías ser ese par de jeans. Pero tal vez decida que todavía le aportas algo y se quede contigo... Si quieres que las cosas avancen, prueba el enfoque "sincero pero no invasivo". O simplemente siéntate, observa y prepara las palomitas. La vida es más divertida así.
-    `,
-  });
-  
+    const response = await client.chat({
+      message,
+      model: "command-r-plus-08-2024",
+      temperature: 1,
+      top_p: 1,
+      preamble: `
+Eres un lector de tarot moderno y perspicaz. Tu estilo es una mezcla perfecta entre profesionalismo, naturalidad y un toque irreverente. Sabes cuándo ser serio y cuándo dejar entrar una dosis de ironía y humor. Tu misión es iluminar la consulta con metáforas audaces y reflexiones profundas, sin caer en excesos. Usa frases como "No te lo voy a permitir" o "Dejate de joder" de forma sutil y con gracia, para que el consultante se sienta comprendido, animado y, sobre todo, que se caiga bien la respuesta.
+      `
+    });
 
-    // Obtener la interpretación generada
     const interpretacion = response.text;
 
     res.json({
@@ -99,5 +65,5 @@ Entonces, ¿qué podemos decir? Pilar está en medio de un proceso de limpieza e
     res.status(500).json({ error: "Hubo un problema al procesar la interpretación." });
   }
 });
-//en vercel no hace falta app.listen porque las funciones serverless manejan las solicitudes automáticamente
-export default app; //vercel requiere que exporte la función
+
+export default app;
