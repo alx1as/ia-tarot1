@@ -1,16 +1,20 @@
 import TresCartasRandom from './TresCartasRandom';
 import { useState } from 'react';
-import './form.css'
+import './form.css';
 
 export default function Form() {
-  const [pregunta, setPregunta] = useState(""); // Estado para capturar la pregunta del usuario.
+  const [pregunta, setPregunta] = useState("");
   const [cartas, setCartas] = useState([]);
-  const [respuesta, setRespuesta] = useState(null); // Estado para almacenar la respuesta de la interpretación.
+  const [respuesta, setRespuesta] = useState(null);
+  const [cargando, setCargando] = useState(false);
 
   const manejarTirada = async () => {
+    setCargando(true);
+    setRespuesta(null);
+
     const resultado = TresCartasRandom();
     setCartas(resultado);
-  
+
     const datos = {
       pregunta,
       cartas: resultado.map((carta) => ({
@@ -18,32 +22,30 @@ export default function Form() {
         posicion: carta.posicion,
         significado_derecho: carta.significado_derecho,
         significado_invertido: carta.significado_invertido,
-       
+        
       })),
     };
-  
+
     try {
       const response = await fetch("https://backend-tarotia.vercel.app/api/interpretar", {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(datos),
       });
-  
+
       if (response.ok) {
         const data = await response.json();
-        setRespuesta(data); // Guardar la interpretación de Cohere
+        setRespuesta(data);
       } else {
         console.error('Error al interpretar las cartas:', response.statusText);
       }
     } catch (error) {
       console.error('Error al enviar la solicitud:', error);
+    } finally {
+      setCargando(false);
     }
   };
- /* <p className="card-description">
-                  {carta.posicion === "derecho"
-                    ? carta.significado_derecho
-                    : carta.significado_invertido}
-                </p>*/
+
   return (
     <div id="form" className="form-container">
       <input
@@ -56,40 +58,40 @@ export default function Form() {
       <button className="btn-throw" onClick={manejarTirada}>
         Tirar cartas
       </button>
-  
+
       <div id="resultado" className="result-container">
         {cartas.length > 0 && (
           <ul className="card-list">
             {cartas.map((carta, index) => (
               <li key={index} className="card-item">
-                <h3 className="card-title">
-                  {carta.nombre}
-                </h3>
+                <h3 className="card-title">{carta.nombre}</h3>
                 <img
                   src={carta.imagen}
                   alt={carta.nombre}
                   className={`card-image ${carta.posicion === 'invertido' ? 'inverted' : ''}`}
-              
                 />
-                 ({carta.posicion})
-              
+                ({carta.posicion})
               </li>
             ))}
           </ul>
         )}
-  
-  {respuesta && (
-  <div className="interpretation-container">
-    <h3 className="interpretation-title">Interpretación:</h3>
-    {respuesta.interpretacion.split("**").map((texto, index) => (
-      <p key={index} className="interpretation-text">
-        {texto.trim()}
-      </p>
-    ))}
-  </div>
-)}
 
+        {cargando && (
+          <div className="spinner-container">
+            <div className="spinner"></div>
+            <p>Interpretando...</p>
+          </div>
+        )}
+
+        {respuesta && (
+          <div className="interpretation-container">
+            <h3 className="interpretation-title">Interpretación de tus cartas: </h3>
+            {respuesta.interpretacion.split("**").map((texto, index) => (
+              <p key={index} className="interpretation-text">{texto.trim()}</p>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
-}  
+}
