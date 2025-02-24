@@ -83,14 +83,18 @@ export default function Form() {
           </div>
         )}
 
-        {respuesta && (
-          <div className="interpretation-container">
-            <h3 className="interpretation-title">Interpretación de tus cartas: </h3>
-            {respuesta.interpretacion.split("**").map((texto, index) => (
-              <p key={index} className="interpretation-text">{texto.trim()}</p>
-            ))}
-          </div>
-        )}
+{respuesta && (
+  <div className="interpretation-container">
+    <h3 className="interpretation-title">Interpretación de tus cartas:</h3>
+    {respuesta.interpretacion.split(/(Pasado:|Presente:|Futuro:|Conclusión:)/g).map((texto, index) => (
+      texto.trim() ? (
+        <p key={index} className={`interpretation-text ${["Pasado:", "Presente:", "Futuro:", "Conclusión:"].includes(texto) ? "interpretation-title" : ""}`}>
+          {texto}
+        </p>
+      ) : null
+    ))}
+  </div>
+)}
       </div>
     </div>
   );
