@@ -10,7 +10,14 @@ dotenv.config(); // Solo necesario para el entorno local.
 const client = new CohereClient({ token: process.env.COHERE_API_KEY });
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://frontend-tarotia-qa4zu5q33-alx1as-projects.vercel.app", // Permite solo tu frontend
+    methods: "GET,POST",
+    allowedHeaders: "Content-Type,Authorization",
+  })
+);
+
 app.use(bodyParser.json());
 
 // Endpoint para interpretar las cartas
