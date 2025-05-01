@@ -12,7 +12,7 @@ const client = new CohereClient({ token: process.env.COHERE_API_KEY });
 const app = express();
 app.use(
   cors({
-    origin: "https://frontend-tarotia-qa4zu5q33-alx1as-projects.vercel.app", // Permite solo tu frontend
+    origin: "https://frontend-tarotia.vercel.app/", // Permite solo tu frontend
     methods: "GET,POST",
     allowedHeaders: "Content-Type,Authorization",
   })
