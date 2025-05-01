@@ -27,7 +27,7 @@ export default function Form() {
     };
 
     try {
-      const response = await fetch("https://backend-tarotia.vercel.app/api/interpretar", {
+      const response = await fetch("https://backend-tarotia.vercel.app/", {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(datos),
